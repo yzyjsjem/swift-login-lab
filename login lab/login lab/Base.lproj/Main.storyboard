@@ -36,13 +36,32 @@
                                     <segue destination="hQb-Bp-4Ta" kind="show" id="zBB-Pe-4QY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkJ-Cf-05z">
+                                <rect key="frame" x="44" y="568" width="106" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="fun"/>
+                                <connections>
+                                    <action selector="funpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YIS-Vm-JJ1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpF-9i-VRC">
+                                <rect key="frame" x="218" y="557" width="141" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="fpw"/>
+                                <connections>
+                                    <action selector="fpwpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQm-Jw-is6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Loginlab" largeTitleDisplayMode="always" id="mGd-Dh-3TQ"/>
                     <connections>
+                        <outlet property="fpw" destination="UpF-9i-VRC" id="hth-6l-UQK"/>
+                        <outlet property="fun" destination="jkJ-Cf-05z" id="jsS-vt-l12"/>
                         <outlet property="name" destination="rGD-oI-VZw" id="ckS-hT-XVY"/>
+                        <segue destination="hQb-Bp-4Ta" kind="show" identifier="sbsegue" id="HgU-eB-rYk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -95,6 +114,9 @@
             <point key="canvasLocation" x="1939" y="78"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HgU-eB-rYk"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
